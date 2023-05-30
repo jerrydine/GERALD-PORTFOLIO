@@ -1,0 +1,235 @@
+.port{
+  margin-top: 6rem;
+  
+}
+.port h2{
+  color: #f4f666 ;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.port-wrap{
+  background-color: #333399;
+}
+
+.portfolio-container{
+  height: 100vh;
+  padding: 1.5rem 0;
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  gap: 5%;
+}
+/* 
+.each-work{
+  border-radius: 10px;
+  box-shadow:0 0 10px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.1);
+  padding-left: 8px;
+  padding-right: 8px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+} */
+
+.pro-img{
+  background: url(../Images/huddle.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  /* aspect-ratio: 1/1; */
+height: 200px;
+}
+.btn-project a{
+  display: inline-block;
+  text-decoration: none;
+  
+}
+
+.btn-project .site{
+  background-color: #020224;
+   padding: 0.7rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: all 400ms ease; ;
+}
+
+.btn-project .site:hover{
+  background-color: transparent;
+  border: 1px solid #020224;
+}
+
+
+.btn-project .git{
+  background-color: transparent;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.4rem;
+  border: 1px solid #020224;
+  cursor: pointer;
+  transition: all 400ms ease;
+  
+}
+
+.btn-project .git:hover{
+  background-color: #020224;
+  border: 0;
+}
+
+.btn-project{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.pro-img2{
+  background: url(../Images/bookmark.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  /* aspect-ratio: 1/1; */
+height: 200px;
+}
+
+
+.pro-img3{
+  background: url(../Images/Blogy.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  /* aspect-ratio: 1/1; */
+height: 200px;
+}
+
+
+.pro-img4{
+  background: url(../Images/loopstudio.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  /* aspect-ratio: 1/1; */
+height: 200px;
+}
+
+
+.pro-img5{
+  background: url(../Images/github.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  /* aspect-ratio: 1/1; */
+height: 200px;
+}
+
+
+.pro-img6{
+  background: url(../Images/tradeexpress.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  /* aspect-ratio: 1/1; */
+height: 200px;
+}
+
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 1025px){
+  .each-work{
+  border-radius: 10px;
+  box-shadow:0 0 10px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.1);
+  padding-left: 8px;
+  padding-right: 8px;
+  }
+}
+
+
+@media (min-width:601px) and (max-width: 1024px){
+  .portfolio-container{
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+    
+  }
+
+  .site, .git{
+    font-size: 10px;
+  }
+
+  
+.each-work{
+    border-radius: 10px;
+  box-shadow:0 0 10px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.1);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  width: 40%;
+
+}
+
+}
+
+
+@media (min-width:400px) and (max-width: 600px){
+  
+  .site, .git{
+    font-size: 10px;
+  }
+
+  .portfolio-container{
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+    height: 90vh;
+  }
+
+   .each-work{
+  border-radius: 0px;
+  box-shadow:0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  }
+
+  #article4{
+    display: none;
+  }
+
+  #article5{
+    display: none;
+  }
+  
+}
+
+@media (min-width:320px) and (max-width: 399px){
+  .portfolio-container{
+    width: 95%;
+    grid-template-columns: 1fr 1fr;
+    height: 90vh;
+  }
+
+
+  
+  #article4{
+    display: none;
+  }
+
+  #article5{
+    display: none;
+  }
+   .site, .git{
+    font-size: 10px;
+  } 
+}

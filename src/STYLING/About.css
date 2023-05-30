@@ -1,0 +1,159 @@
+#h4,
+#h2 {
+  text-align: center;
+  font-weight: 500;
+}
+
+#h2 {
+  margin-bottom: 3rem;
+  color: #f4f666;
+}
+
+.aboutme {
+  margin-top: 6rem;
+}
+
+.about-container {
+  width: 75%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 35% 50%;
+  gap: 15%;
+}
+
+.about-me {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 2rem;
+  background: linear-gradient(45deg, transparent, #f4f666, transparent);
+  display: grid;
+  place-items: center;
+}
+
+.about-img {
+  border-radius: 2rem;
+  overflow: hidden;
+  transform: rotate(10deg);
+}
+
+.about-img img {
+  height: 350px;
+  width: 300px;
+}
+
+.about-img{
+  background-color: #fff;
+}
+
+.about-img:hover {
+  transform: rotate(0);
+  transition: all 400ms ease;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.abt-cards {
+  background-color: #333399;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.abt-cards:hover {
+  background-color: transparent;
+  border: 1px solid #333399;
+  cursor: default;
+}
+
+.abt-icons {
+  color: #929415!important;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  
+}
+
+.abt-cards h5 {
+  font-size: 0.95rem;
+}
+
+.abt-cards small {
+  font-size: 0.7rem;
+  color: var(--color-light);
+}
+
+.about-info p {
+  margin: 2rem 0 2rem;
+  color: var(--color-light);
+}
+
+.btn-download {
+  color: #fff;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid #f4f666;
+  background-color: #929415;
+  transition: all 400ms ease;
+  display: inline-block;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .about-me {
+    width: 50%;
+    margin: 2rem auto 7rem;
+  }
+
+  .about-info p {
+    margin: 1rem 0 1.5rem;
+  }
+}
+
+/* mobile views */
+@media screen and (max-width: 600px) {
+  .about-me {
+    width: 70%;
+    margin: 0 auto 4rem;
+  }
+
+  .cards{
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .about-info{
+    text-align: center;
+  }
+
+  .about-info p{
+    margin: 1.5rem 0;
+  }
+
+  
+
+}
+
+@media (min-width: 360px) and (max-width:599px){
+.about-img img{
+  height: 250px;
+  width: 250px;
+}
+
+.about-me{
+  width: 90%;
+}
+    
+}
+
+    
+

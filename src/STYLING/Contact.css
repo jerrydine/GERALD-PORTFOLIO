@@ -1,0 +1,131 @@
+/* .container-about .contact-container{
+  width: 58%;
+  display: grid;
+  grid-template-columns: 30% 58%;
+  gap: 12%
+} */
+
+.contact-me{
+  margin-top: 6rem;
+}
+
+.contact-header{
+text-align: center;
+}
+
+#contact-primary{
+  color: #f4f666;
+  margin-bottom: 1.5rem;
+}
+
+
+.contact-container{
+  width: 58%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 30% 58%;
+  gap: 12%
+}
+
+.contact-options{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+h2,h4,h5{
+  font-weight: 500;
+}
+
+.contact-option{
+  background-color: #333399;
+  text-align: center;
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+
+}
+
+.contact-option:hover{
+  background-color: transparent;
+  border: 1px solid #333399;
+}
+
+
+
+
+
+.contact-option a{
+  text-decoration: none;
+  color: #f4f666;
+}
+
+.contact-option .contact-icons{
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  
+}
+
+.contact-option a{
+  margin-top: 0.7rem;
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+.btn-submit{
+  color: #fff;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid #f4f666;
+  background-color: #929415;
+  transition: all 400ms ease;
+  display: inline-block;
+  width: 35%;
+  text-decoration: none;
+}
+
+/* Styling for form */
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+form input, textarea{
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  border: 2px solid #333399;
+  resize: none;
+  color: #fff;
+}
+
+
+/* Media Quries */
+
+
+@media screen and (max-width: 1024px) {
+ .contact-container{
+  grid-template-columns: 1fr;
+  gap: 2rem;
+ }
+}
+
+/* mobile views */
+@media screen and (max-width: 600px) {
+  .contact-container{
+    width: 90%;
+  }
+
+  .btn-submit{
+    width: 40%;
+  }
+ 
+
+}
+
+
